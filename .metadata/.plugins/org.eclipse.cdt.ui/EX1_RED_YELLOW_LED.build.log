@@ -1,0 +1,22 @@
+09:40:27 **** Incremental Build of configuration Debug for project EX1_RED_YELLOW_LED ****
+make -j16 all 
+arm-none-eabi-gcc -o "EX1_RED_YELLOW_LED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\minhl\OneDrive\Documents\STUDY\HK221\Vi xu li\SMT32\LAB1\EX1_RED_YELLOW_LED\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EX1_RED_YELLOW_LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: EX1_RED_YELLOW_LED.elf
+ 
+arm-none-eabi-size   EX1_RED_YELLOW_LED.elf 
+arm-none-eabi-objdump -h -S  EX1_RED_YELLOW_LED.elf  > "EX1_RED_YELLOW_LED.list"
+   text	   data	    bss	    dec	    hex	filename
+   4624	     20	   1572	   6216	   1848	EX1_RED_YELLOW_LED.elf
+arm-none-eabi-objcopy  -O ihex  EX1_RED_YELLOW_LED.elf  "EX1_RED_YELLOW_LED.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  EX1_RED_YELLOW_LED.elf  "EX1_RED_YELLOW_LED.bin"
+ 
+Finished building: EX1_RED_YELLOW_LED.list
+Finished building: EX1_RED_YELLOW_LED.hex
+ 
+ 
+Finished building: EX1_RED_YELLOW_LED.bin
+ 
+
+09:40:28 Build Finished. 0 errors, 0 warnings. (took 1s.541ms)
+
