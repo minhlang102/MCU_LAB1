@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EX4_4WAYS_TRAFFIC_LIGHT_7EG&apos; to &apos;EX5_4WAYS_TRAFFIC_LIGHT_7EG&apos;" description="Rename resource &apos;EX4_4WAYS_TRAFFIC_LIGHT_7EG&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/EX4_4WAYS_TRAFFIC_LIGHT_7EG" name="EX5_4WAYS_TRAFFIC_LIGHT_7EG" stamp="1662561636009" updateReferences="true"/>
+</session>

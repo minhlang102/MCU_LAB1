@@ -1,0 +1,23 @@
+08:12:10 **** Incremental Build of configuration Debug for project EX7_8_9_CLOCK ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "EX7_8_9_CLOCK.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\minhl\OneDrive\Documents\STUDY\HK221\Vi xu li\SMT32\LAB1\EX7_8_9_CLOCK\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EX7_8_9_CLOCK.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: EX7_8_9_CLOCK.elf
+ 
+arm-none-eabi-size   EX7_8_9_CLOCK.elf 
+arm-none-eabi-objdump -h -S  EX7_8_9_CLOCK.elf  > "EX7_8_9_CLOCK.list"
+arm-none-eabi-objcopy  -O ihex  EX7_8_9_CLOCK.elf  "EX7_8_9_CLOCK.hex"
+   text	   data	    bss	    dec	    hex	filename
+   4776	     20	   1572	   6368	   18e0	EX7_8_9_CLOCK.elf
+arm-none-eabi-objcopy  -O binary  EX7_8_9_CLOCK.elf  "EX7_8_9_CLOCK.bin"
+Finished building: default.size.stdout
+Finished building: EX7_8_9_CLOCK.list
+Finished building: EX7_8_9_CLOCK.hex
+ 
+Finished building: EX7_8_9_CLOCK.bin
+ 
+ 
+ 
+
+08:12:11 Build Finished. 0 errors, 0 warnings. (took 743ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EX7_CLEAR&apos; to &apos;EX7_8_9_CLOCK&apos;" description="Rename resource &apos;EX7_CLEAR&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/EX7_CLEAR" name="EX7_8_9_CLOCK" stamp="1662998407026" updateReferences="true"/>
+</session>
